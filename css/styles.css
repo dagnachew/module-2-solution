@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.back {
+	background-color: gray;
+	padding: 1em;
+	position: relative;
+	min-height: fit-content;
+	border: 3px solid #000000;
+}
+
+h1, h2, p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 100%;
+  position: relative;
+  top: 30px;
+  line-height: 1.4;
+  margin-bottom: 2em;
+  
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 500;
+	text-align: center;
+	margin: 2em 0;
+}
+
+.headings_2a, .headings_2b, .headings_2c {
+	text-align: center;
+	border-left: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	min-width: 150px;
+	padding: .1em;
+	position: absolute;
+  	top: 0;
+  	right: 0;
+  }
+
+.headings_2a {
+	background: #ffb3b3;
+}
+
+.headings_2b {
+	background: #ffbf00;
+}
+
+.headings_2c {
+	background: #d2b48c;
+}
+
+
+
+/**********  desktop view  **********/
+
+@media (min-width: 992px) {
+	 
+	 .back {
+		width: 30%;
+		float: left;
+		margin-left: 2.5%;
+	}
+
+}
+
+/********** tablet view **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.back {
+		width: 45%;
+		margin-left: 2.5%;
+		float: left;
+		margin-bottom: 2.5%;
+		font-size: 120%;
+	}
+	
+	.back_2 {
+		width: 92.5%;
+		min-height: fit-content;
+		font-size: 120%;
+	}
+	
+	h1 {
+		margin: 1em 0;
+	}
+
+}
+
+
+/**********  mobile view  **********/
+
+@media (max-width: 767px) {
+	
+	.back {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		font-size: 120%;
+	}
+
+	h1 {
+		margin: 1em 0;
+	}
+
+}
